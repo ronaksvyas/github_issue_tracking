@@ -37,11 +37,8 @@ function getPathComponentsFromRepoUrl()
 	if(empty($_GET['repo_url'])){
 		die('Invalid params or no params');
 	}
-<<<<<<< HEAD
+
 	$url = trim(urldecode($_GET['repo_url']));
-=======
-	$url = urldecode($_GET['repo_url']);
->>>>>>> c26972f5a7d5928482c7e3825d637cab667e5036
 	//if empty, kill it
 	if(!$url){
 		die('No url parameter passed');
@@ -81,11 +78,6 @@ $curr_dt = getCurrentDateTimeInRequiredFormat();
 $dt_before_24_hours = getDateTime24HoursBefore();
 $dt_a_week_before= getDateTimeAWeekBefore();
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> c26972f5a7d5928482c7e3825d637cab667e5036
 while($page_no < MAX_PAGES){
 	$client->setPage($page_no);
 	$client->setPageSize(MAX_ISSUES_PER_PAGE);
